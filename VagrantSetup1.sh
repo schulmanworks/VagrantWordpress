@@ -2,8 +2,8 @@
 # Run this in an empty directory to setup Vagrant for use with wordpress
 #Define user and host 
 HOST=$(hostname)
-USR=$user
-echo $USR@$HOST
+export user=$(whoami)
+echo $user@$HOST
 #prepare VagrantSetup2.sh
 chmod +x VagrantSetup2.sh
 #Create Vagrantfile
