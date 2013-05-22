@@ -11,5 +11,4 @@ vagrant init precise64 http://files.vagrantup.com/precise64.box
 vagrant up
 #Enter vagrant and run VagrantSetup2.sh
 vagrant ssh
-echo penis
 
