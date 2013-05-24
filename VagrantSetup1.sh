@@ -10,5 +10,6 @@ chmod +x VagrantSetup2.sh
 vagrant init precise64 http://files.vagrantup.com/precise64.box
 vagrant up
 #Enter vagrant and run VagrantSetup2.sh
+read -p "After the ssh, run cd /Vagrant then ./VagrantSetup2.sh. Press [enter] to continue." 
 vagrant ssh
 
