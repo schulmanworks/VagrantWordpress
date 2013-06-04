@@ -1,6 +1,9 @@
 sudo /etc/init.d/apache2 restart
 #Install MySQL
 sudo apt-get install mysql-server
+#Install FTP
+sudo apt-get install vsftpd
+sudo /etc/init.d/vsftpd restart
 #Install phpmyadmin
 sudo apt-get install libapache2-mod-auth-mysql php5-mysql phpmyadmin
 read -p "After the next command runs, complete step 13b and run VagrantSetup5.sh. Press [enter] to continue."
