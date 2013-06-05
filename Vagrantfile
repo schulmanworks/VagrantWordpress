@@ -1,7 +1,7 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-Vagrant.configure("2") do |config|
+Vagrant.configure("1") do |config|
   # All Vagrant configuration is done here. The most common configuration
   # options are documented and commented below. For a complete reference,
   # please see the online documentation at vagrantup.com.
@@ -108,8 +108,13 @@ Vagrant.configure("2") do |config|
   # chef-validator, unless you changed the configuration.
   #
   #   chef.validation_client_name = "ORGNAME-validator"
+	#config.vm.share_folder "www", "/vagrant/www/vagrant", "/home/ryan/Programming/WebDesign/ryanstechsolutionsWordpress", :create => true
+	config.vm.share_folder "www", "/vagrant", "/home/ryan/Programming/WebDesign/ryanstechsolutionsWordpress", :owner => "www-data", :group => "www-data" 
+	
 end
 # Forward guest port 80 to host port 8080
 Vagrant::Config.run do |config|
-  	config.vm.forward_port 80, 5000
+  	config.vm.forward_port 80, 2200
+	
 end
+
